@@ -13,6 +13,7 @@ function getColor(stock) {
   }
 }
 
+//Time Chart
 async function main() {
   const timeChartCanvas = document.querySelector("#time-chart");
   const highestPriceChartCanvas = document.querySelector(
@@ -41,8 +42,9 @@ const data = {
       data: [0, 10, 5, 2, 20, 30, 45],
     },
   ],
-  
 };
+
+// === include 'setup' then 'config' above ===
 
 stocks.forEach((stock) => stock.values.reverse());
 
